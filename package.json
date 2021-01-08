@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@dropseed/pitchfork": "^0.2.1",
+    "@dropseed/pitchfork": "<1.0.0",
     "autoprefixer": "^10.0.2",
     "parcel-bundler": "^1.12.4",
     "postcss": "^8.1.10",
