@@ -29,6 +29,13 @@ so that improvements can be pushed/pulled easily.
 $ git submodule add https://github.com/dropseed/dropseed-docs-theme theme
 ```
 
+To pull the latest changes,
+you can then do:
+
+```console
+$ git submodule update --remote theme
+```
+
 You could also do a one-time copy of these files to use as a starting point.
 
 ### `combine.yml`
