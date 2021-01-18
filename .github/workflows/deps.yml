@@ -10,12 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - uses: actions/setup-python@v2
-      with:
-        python-version: 3.7  # for docs more than other (3.8)
-    - run: |
-        pip install -U pip pipenv
-        ./scripts/install
+    - run: ./scripts/install
     - run: curl https://deps.app/install.sh | bash -s -- -b $HOME/bin
     - run: $HOME/bin/deps ci
       env:
