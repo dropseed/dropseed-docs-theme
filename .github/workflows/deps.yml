@@ -1,0 +1,23 @@
+name: deps
+
+on:
+  schedule:
+  - cron: 0 0 * * *
+  workflow_dispatch: {}
+
+jobs:
+  deps:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-python@v2
+      with:
+        python-version: 3.7  # for docs more than other (3.8)
+    - run: |
+        pip install -U pip pipenv
+        ./scripts/install
+    - run: curl https://deps.app/install.sh | bash -s -- -b $HOME/bin
+    - run: $HOME/bin/deps ci
+      env:
+        DEPS_TOKEN: ${{ secrets.DEPS_TOKEN }}
+        DEPS_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
