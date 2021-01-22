@@ -28,12 +28,12 @@
     <meta property="og:site_name" content="{{ name }}" />
     <meta property="og:locale" content="en_US" />
     {% if base_url -%}
-    <meta property="og:url" content="{{ base_url }}{{ url }}" />
+    <meta property="og:url" content="{{ url|absolute_url }}" />
     {% if image_url is defined -%}
-    <meta property="og:image" content="{{ base_url }}{{ image_url }}" />
+    <meta property="og:image" content="{{ image_url|absolute_url }}" />
     {%- else -%}
     <meta property="og:image"
-        content="{{ base_url }}/assets/img/open-graph.png" />
+        content="{{ '/assets/img/open-graph.png'|absolute_url }}" />
     {%- endif %}
     <meta name="twitter:card" content="summary_large_image" />
     {%- endif %}
