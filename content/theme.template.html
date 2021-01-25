@@ -51,7 +51,7 @@
 
     {% block body %}
     {# duplicate hidden and flex is intentional for mobile show/hide #}
-    <div data-sidebar class="fixed top-0 bottom-0 z-50 flex flex-col hidden h-full border-r border-gray-300 shadow-xl md:flex md:relative md:shadow-none md:w-60 lg:w-64 xl:w-72">
+    <div data-sidebar class="fixed top-0 bottom-0 z-50 flex flex-col hidden h-full border-r border-gray-300 shadow-xl md:flex md:relative md:shadow-none md:w-60 lg:w-64 xl:w-72 {% block sidebar_class %}{% endblock %}">
         <div class="flex flex-shrink-0 h-16 pr-4 -mb-px md:pl-6">
             {% block sidebar_home_link %}{% endblock %}
         </div>
