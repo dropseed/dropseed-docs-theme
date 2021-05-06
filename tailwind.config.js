@@ -16,4 +16,7 @@ module.exports = {
     enabled: process.env.NETLIFY == "true" || process.env.PURGE != "",
     content: ["./output/**/*.html", "./output/**/*.js"],
   },
+  plugins: [
+    require("@tailwindcss/aspect-ratio"),
+  ],
 }
