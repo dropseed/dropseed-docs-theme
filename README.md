@@ -49,7 +49,7 @@ steps:
     watch: ["./theme/content/assets/_app.js"]
   # Note how we're using a modified copy of _tailwind.css from the site itself, not the theme
   # (this is also run after JS so that purge uses JS too)
-  - run: "./theme/node_modules/.bin/tailwind build ./content/assets/_tailwind.css -o ./output/assets/tailwind.css"
+  - run: "./theme/node_modules/.bin/tailwind -i ./content/assets/_tailwind.css -o ./output/assets/tailwind.css"
     watch:
       - "./tailwind.config.js"
       - "./content/assets/_tailwind.css"
