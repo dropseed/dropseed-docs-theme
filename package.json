@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "@dropseed/pitchfork": "<1.0.0",
+    "@fancyapps/ui": "^4.0.0-alpha.4",
     "autoprefixer": "^10.0.2",
     "parcel-bundler": "^1.12.4",
     "postcss": "^8.1.10",

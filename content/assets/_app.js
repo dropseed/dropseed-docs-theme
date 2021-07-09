@@ -1,5 +1,12 @@
 require("@dropseed/pitchfork/search")
 
+import { Fancybox } from "@fancyapps/ui"
+import "@fancyapps/ui/dist/fancybox.css"
+
+Fancybox.bind(".content a > img", {
+    // options
+});
+
 // Use / to jump to the search bar
 document.addEventListener("keydown", event => {
     if (event.target === document.body && event.key === "/") {
