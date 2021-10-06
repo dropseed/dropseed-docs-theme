@@ -77,3 +77,22 @@ sidebarToggle.addEventListener("click", event => {
         event.stopPropagation()
     }
 })
+
+// Allow clicks on h1, h2, h3 (without an <a>) and highlight them
+// if the url navigates straight to an anchor #hash
+for (const heading of document.querySelectorAll("h1[id], h2[id], h3[id]")) {
+    heading.classList.add("anchored-heading");
+    heading.addEventListener("click", event => {
+        event.preventDefault()
+        const hash = event.target.getAttribute("id")
+        window.history.pushState(null, null, "#" + hash)
+        window.dispatchEvent(new HashChangeEvent("hashchange"))
+    })
+}
+const hash = window.location.hash
+if (hash) {
+    const link = document.querySelector(".anchored-heading[id='" + hash.substr(1) + "']")
+    if (link) {
+        link.classList.add("active-anchored-heading")
+    }
+}
