@@ -14,7 +14,6 @@ module.exports = {
   },
   content: ["./output/**/*.html", "./output/**/*.js"],
   plugins: [
-    require("@tailwindcss/aspect-ratio"),
     require("@tailwindcss/forms"),
   ],
 }
