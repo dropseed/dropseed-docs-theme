@@ -46,13 +46,10 @@ and the build steps are defined there.
 ```yaml
 steps:
   - run: "./theme/node_modules/.bin/parcel build theme/content/assets/_app.js --out-dir output/assets --out-file app.js"
-    watch: ["./theme/content/assets/_app.js"]
+    watch: "./theme/node_modules/.bin/parcel watch theme/content/assets/_app.js --out-dir output/assets --out-file app.js"
   # Note how we're using a modified copy of _tailwind.css from the site itself, not the theme
-  # (this is also run after JS so that purge uses JS too)
   - run: "./theme/node_modules/.bin/tailwind -i ./content/assets/_tailwind.css -o ./output/assets/tailwind.css"
-    watch:
-      - "./tailwind.config.js"
-      - "./content/assets/_tailwind.css"
+    watch: "./theme/node_modules/.bin/tailwind -i ./content/assets/_tailwind.css -o ./output/assets/tailwind.css --watch"
   - run: "./theme/node_modules/.bin/pitchfork index output -c .content"
 
 variables:
