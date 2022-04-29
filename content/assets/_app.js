@@ -1,4 +1,5 @@
 require("@dropseed/pitchfork/search")
+require("@dropseed/codeplus/dist/browser")
 
 import { Fancybox } from "@fancyapps/ui"
 import "@fancyapps/ui/dist/fancybox.css"

@@ -928,6 +928,11 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
+"@dropseed/codeplus@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@dropseed/codeplus/-/codeplus-0.2.0.tgz#d819291b5c7c1af3328f813ef0374440520bd631"
+  integrity sha512-/EYobgqXAofp7TALx+OjR9ByqaknWWR+qeO7vaTYLBZDFM6vHPjzL5CpldHD5d1MdL3vF7wgkwZfXmk2po9+Xg==
+
 "@dropseed/pitchfork@<1.0.0":
   version "0.3.2"
   resolved "https://registry.yarnpkg.com/@dropseed/pitchfork/-/pitchfork-0.3.2.tgz#8a15cd9273fd3ad9ac76f7a4dbe64bba540182e2"
