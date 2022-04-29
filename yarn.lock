@@ -922,9 +922,9 @@
     to-fast-properties "^2.0.0"
 
 "@dropseed/codeplus@<1.0.0":
-  version "0.4.0"
-  resolved "https://registry.yarnpkg.com/@dropseed/codeplus/-/codeplus-0.4.0.tgz#a4691e29a4aaec1ff4bd16d44b24c81ba70a47e1"
-  integrity sha512-br4fVTAuD/703maan3RhboD6n8zmN0o8BpRf5cgL+Cq2YByjwydyYTl7MZqvMpKAkuELbLp6xB0gxcHrFzhSNA==
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/@dropseed/codeplus/-/codeplus-0.5.0.tgz#2061887f6066433ead36cc09110025eed74f74e6"
+  integrity sha512-uOqqnqsiiDe4I0yJx+akCtazT21C+PiUSjrfGQ/yYgUo0gYkNDZIMy5qe27G6Ur1a99tUgvB8kJl+GAL03jWLQ==
 
 "@dropseed/pitchfork@<1.0.0":
   version "0.3.2"
