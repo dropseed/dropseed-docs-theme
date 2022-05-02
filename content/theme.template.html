@@ -18,7 +18,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="stylesheet" href="/assets/tailwind.css">
-    <link rel="stylesheet" href="/assets/app.css">
 
     <title>{% if title is defined %}{{ title }} - {% endif %}{{ name }}</title>
     {% if description is defined %}<meta name="description" content="{{ description }}">{% endif %}
@@ -82,7 +81,7 @@
             <div class="flex-1 w-full md:relative">
                 <div class="relative flex">
                     <input tabindex="1" data-pitchfork-input type="text"
-                        class="w-full py-1 pl-12 pr-3 mx-auto placeholder-gray-600 bg-transparent appearance-none border-none focus:ring-transparent focus:border-none focus:outline-none"
+                        class="w-full py-1 pl-12 pr-3 mx-auto placeholder-gray-600 bg-transparent border-none appearance-none focus:ring-transparent focus:border-none focus:outline-none"
                         placeholder="Search">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="16" height="16"
                         class="absolute inset-y-0 left-0 h-full ml-4 text-gray-700 fill-current">
@@ -94,7 +93,7 @@
                 {% raw %}
                 <div data-pitchfork-results data-pitchfork-index-url="/search-index.json" data-pitchfork-truncate="140"
                     data-pitchfork-highlight-class="bg-yellow-200" data-pitchfork-active-class="bg-gray-100" style="display: none;"
-                    class="absolute z-50 left-0 flex flex-col w-full h-64 mt-2 overflow-y-scroll bg-white border border-gray-200 rounded shadow-lg md:max-w-xl md:left-12">
+                    class="absolute left-0 z-50 flex flex-col w-full h-64 mt-2 overflow-y-scroll bg-white border border-gray-200 rounded shadow-lg md:max-w-xl md:left-12">
                     <script type="x-tmpl-mustache">
                     {{#results}}
                     <a href="{{ url }}" class="block px-4 py-2 border-b border-gray-200 hover:bg-gray-100">
