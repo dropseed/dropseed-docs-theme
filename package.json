@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "@dropseed/codeplus": "^0.5.1",
+    "@dropseed/codeplus": "^0.6.0",
     "@dropseed/pitchfork": "<1.0.0",
     "@fancyapps/ui": "^4.0.26",
     "@tailwindcss/forms": "^0.5.0",
