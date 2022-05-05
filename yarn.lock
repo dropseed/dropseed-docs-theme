@@ -921,10 +921,10 @@
     "@babel/helper-validator-identifier" "^7.16.7"
     to-fast-properties "^2.0.0"
 
-"@dropseed/codeplus@^0.6.0":
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/@dropseed/codeplus/-/codeplus-0.6.0.tgz#e1a9360c192312bc3fce48f99bf055cf6176e7fe"
-  integrity sha512-j3dBYvzzMkJqAkQvBoWxMrEf46pXdi3LUDfeKWm9SGdsRM3rz6zpkwwRwYhtOHRNEenHtnen5s/MagPiqpwOew==
+"@dropseed/codeplus@^0.6.1":
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/@dropseed/codeplus/-/codeplus-0.6.1.tgz#800c5008e75151e7942169377674710461f4d066"
+  integrity sha512-gdXHRQr24FmZA85GNXhxRkQZtn5Qny6xteuOApd3SV8kQyzLy9em0TdSQ2FCXRlwMHqJOl7IgCkqaya9FhXnoQ==
 
 "@dropseed/pitchfork@<1.0.0":
   version "0.3.2"
