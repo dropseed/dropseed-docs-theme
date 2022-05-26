@@ -38,7 +38,7 @@ if (otp) {
             link.innerHTML = heading.innerText
             link.className = linkClass
             if (heading.tagName !== "H2") {
-                link.classList.add("pl-1")
+                link.classList.add("pl-2")
             }
             otp.appendChild(link)
         }
