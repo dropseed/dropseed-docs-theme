@@ -64,20 +64,22 @@ for (const el of document.querySelectorAll("[data-scroll-class]")) {
 
 // Mobile nav
 const sidebarToggle = document.querySelector("[data-toggle-sidebar]")
-const sidebar = document.querySelector("[data-sidebar]")
-const sidebarToggleClass = sidebarToggle.getAttribute("data-toggle-sidebar")
-document.addEventListener("click", event => {
-    // Hide the sidebar if we click anywhere else
-    if (!event.target.matches("[data-sidebar] *") && !sidebar.classList.contains(sidebarToggleClass)) {
-        sidebar.classList.add(sidebarToggleClass)
-    }
-})
-sidebarToggle.addEventListener("click", event => {
-    if (sidebar.classList.contains(sidebarToggleClass)) {
-        sidebar.classList.remove(sidebarToggleClass)
-        event.stopPropagation()
-    }
-})
+if (sidebarToggle) {
+    const sidebar = document.querySelector("[data-sidebar]")
+    const sidebarToggleClass = sidebarToggle.getAttribute("data-toggle-sidebar")
+    document.addEventListener("click", event => {
+        // Hide the sidebar if we click anywhere else
+        if (!event.target.matches("[data-sidebar] *") && !sidebar.classList.contains(sidebarToggleClass)) {
+            sidebar.classList.add(sidebarToggleClass)
+        }
+    })
+    sidebarToggle.addEventListener("click", event => {
+        if (sidebar.classList.contains(sidebarToggleClass)) {
+            sidebar.classList.remove(sidebarToggleClass)
+            event.stopPropagation()
+        }
+    })
+}
 
 // Allow clicks on h1, h2, h3 (without an <a>) and highlight them
 // if the url navigates straight to an anchor #hash
