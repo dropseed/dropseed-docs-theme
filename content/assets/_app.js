@@ -21,7 +21,14 @@ document.addEventListener("keydown", event => {
 for (const activeContainer of document.querySelectorAll("[data-active-url]")) {
     const activeClass = activeContainer.getAttribute("data-active-url")
     for (const link of activeContainer.querySelectorAll("a[href='" + window.location.pathname + "']")) {
-        link.classList.add(activeClass)
+        // add every activeClass split by spaces
+        for (const active of activeClass.split(" ")) {
+            link.classList.add(active)
+            // Support nested nav by finding the parent li and highlighting that anchor too
+            if (link.parentElement.parentElement.parentElement.tagName === "LI") {
+                link.parentElement.parentElement.parentElement.querySelector("a").classList.add(active);
+            }
+        }
     }
 }
 
