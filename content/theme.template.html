@@ -58,7 +58,9 @@
         </div>
 
         <div class="flex-grow pl-6 pr-4 overflow-y-scroll" data-active-url="text-blue-700 active" data-scroll-class="border-t border-gray-200">
-            {% include "_sidebar.html" %}
+            {% block sidebar %}
+                {% include "_sidebar.html" %}
+            {% endblock %}
         </div>
 
         <div class="justify-between hidden w-full px-4 py-3 text-xs border-t border-gray-200 md:flex">
