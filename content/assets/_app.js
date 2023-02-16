@@ -8,6 +8,20 @@ Fancybox.bind(".content a > img", {
     // options
 });
 
+const videos = document.querySelectorAll(".content video");
+if (videos.length > 1) {
+    for (const video of videos) {
+        video.removeAttribute("autoplay")
+        video.addEventListener("mouseenter", event => {
+          for (const v of videos) {
+            v.pause();
+          }
+          video.play();
+        });
+    }
+    videos[0].play();  // Start playing the first one
+}
+
 // Use / to jump to the search bar
 document.addEventListener("keydown", event => {
     if (event.target === document.body && event.key === "/") {
