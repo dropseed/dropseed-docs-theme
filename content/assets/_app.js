@@ -105,6 +105,9 @@ if (sidebarToggle) {
 // Allow clicks on h1, h2, h3 (without an <a>) and highlight them
 // if the url navigates straight to an anchor #hash
 for (const heading of document.querySelectorAll("h1[id], h2[id], h3[id]")) {
+    if (heading.querySelector("a")) {
+        continue;
+    }
     heading.classList.add("anchored-heading");
     heading.addEventListener("click", event => {
         event.preventDefault()
