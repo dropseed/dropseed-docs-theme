@@ -134,6 +134,7 @@
                 data-on-this-page="text-gray-500 block mt-3 text-sm hover:text-gray-900">
                 <h4 class="text-sm text-gray-600 uppercase">On this page</h4>
             </div>
+            {% block content_container %}
             <div class="w-full lg:max-w-2xl">
                 {% block content_header %}{% endblock %}
                 <div class="content">
@@ -144,6 +145,7 @@
                 <p class="hidden md:block">&nbsp;</p>
                 <p class="hidden md:block">&nbsp;</p>
             </div>
+            {% endblock %}
         </div>
     </div>
     {% endblock body %}
