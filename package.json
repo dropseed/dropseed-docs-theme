@@ -2,7 +2,7 @@
   "dependencies": {
     "@dropseed/codeplus": "^0.6.1",
     "@dropseed/pitchfork": "<1.0.0",
-    "@fancyapps/ui": "^5.0.22",
+    "@fancyapps/ui": "^5.0.23",
     "@tailwindcss/forms": "^0.5.0",
     "autoprefixer": "^10.0.2",
     "parcel-bundler": "^1.12.4",
