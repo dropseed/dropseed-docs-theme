@@ -955,10 +955,10 @@
     scroll-into-view-if-needed "^2.2.26"
     truncate-html "^1.0.3"
 
-"@fancyapps/ui@^5.0.23":
-  version "5.0.23"
-  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-5.0.23.tgz#5a5c2d866eba4061c020fd659e8c5f6d52bca12c"
-  integrity sha512-H/2ZXgWGHdpH6nXrY5D7zhlEN3mlSr7ivkvE6MnPzCO/e30yhoUY/afzISegaJAN/plOtU+ao577IBoGYCfBDQ==
+"@fancyapps/ui@^5.0.24":
+  version "5.0.24"
+  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-5.0.24.tgz#bf2e5791d4d284a01f8b31f579d946a9238bd862"
+  integrity sha512-zdyQLVKY5G4q/l2a8H1p9w5gBfL+sgVOXogoOzREbavzzdDKnNNqBO21fnjxUj+GVmBM8kYSR6LeOYf1nYFhvA==
 
 "@iarna/toml@^2.2.0":
   version "2.2.5"
