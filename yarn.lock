@@ -1009,10 +1009,10 @@
     scroll-into-view-if-needed "^2.2.26"
     truncate-html "^1.0.3"
 
-"@fancyapps/ui@^4.0.26":
-  version "4.0.31"
-  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-4.0.31.tgz#cf187b0ffe41ec1f44fd2ba2c2237f5cf7914619"
-  integrity sha512-D7+PMIloxSOFJyY+lXcNlVDhmssOmDT6PT5fqQUIiws2hT7PH29r0EKZxERmACSQpm6qrFkP7rSguzXWvRJduQ==
+"@fancyapps/ui@^5.0.33":
+  version "5.0.33"
+  resolved "https://registry.yarnpkg.com/@fancyapps/ui/-/ui-5.0.33.tgz#ec51c190e65097bfcf45a85c7a97678974bf6d01"
+  integrity sha512-nYW7ntjhrpqoLz/vA9KpJ2zJ5gXRB7rpFKXWjW4GC1f2st/IoI1Oy2TEEz0xABIlvPTCuoMXaT1X3UC7bP97rA==
 
 "@iarna/toml@^2.2.0":
   version "2.2.5"
