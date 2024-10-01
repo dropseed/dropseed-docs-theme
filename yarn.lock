@@ -990,10 +990,10 @@
     "@babel/helper-validator-identifier" "^7.22.5"
     to-fast-properties "^2.0.0"
 
-"@dropseed/codeplus@^0.6.1":
-  version "0.6.3"
-  resolved "https://registry.yarnpkg.com/@dropseed/codeplus/-/codeplus-0.6.3.tgz#36541acae5d72b0197bfea97ef79a22a9fcf4de7"
-  integrity sha512-lhg5Xao3GeBSjWjpth54VI2ZSHU1WTT+CTySOJfj2j5kL0nD94goEdQ7kOqQXRSHcQDlGX4rqpHFPTf8vGFAnQ==
+"@dropseed/codeplus@^0.7.0":
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/@dropseed/codeplus/-/codeplus-0.7.0.tgz#c25ae6f5a8044fcbb8f17ee751722655180d4d9d"
+  integrity sha512-t6Y1du8UENWaW9HZgdOeMWXqFfxbM09jJUt/wJTr4wklxatWpA6lTCmGWVOk51On8tELPTD4cahvLm+6EcBnmQ==
 
 "@dropseed/pitchfork@<1.0.0":
   version "0.3.2"
